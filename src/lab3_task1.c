@@ -1,7 +1,7 @@
 /*
  * Lab 3, Task 1
- * Name: <your name>
- * Student ID: <your student ID>
+ * Name: Nigar Mammadrzayeva
+ * Student ID: 251ADB126
  *
  * Implement array algorithms:
  *   - find minimum value
@@ -55,20 +55,39 @@ int main(void) {
 // Implement functions below
 int array_min(int arr[], int size) {
     // TODO: return smallest element
+    int min = arr[0]; 
+    for(int i=0; i< size; i++)  {
+      if (arr[i]< min) {
+        min = arr[i];
+      }
+    }
     return 0; // placeholder
 }
 
 int array_max(int arr[], int size) {
     // TODO: return largest element
+    int max = arr[0];
+    for (int j=0; j<size; j++){
+        if (arr[j]>max){
+            max = arr[j];
+        }
+    }
     return 0; // placeholder
 }
 
 int array_sum(int arr[], int size) {
     // TODO: return sum of elements
+    int sum =0;
+
+    for(int k=0; k<size; k++){
+     sum+= arr[k];
+    }
     return 0; // placeholder
 }
 
 float array_avg(int arr[], int size) {
     // TODO: return average as float (avoid integer division)
+    for (int l=0; l<size; l++)
+    
     return 0.0f; // placeholder
 }
