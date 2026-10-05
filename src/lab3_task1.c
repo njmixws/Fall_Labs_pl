@@ -41,53 +41,59 @@ int array_sum(int arr[], int size);
 float array_avg(int arr[], int size);
 
 int main(void) {
-    int arr[] = {10, 20, 5, 30, 15};
-    int size = 5;
+  int arr[] = {10, 20, 5, 30, 15};
+  int size = 5;
 
-    printf("Min: %d\n", array_min(arr, size));
-    printf("Max: %d\n", array_max(arr, size));
-    printf("Sum: %d\n", array_sum(arr, size));
-    printf("Avg: %.2f\n", array_avg(arr, size));
+  printf("Min: %d\n", array_min(arr, size));
+  printf("Max: %d\n", array_max(arr, size));
+  printf("Sum: %d\n", array_sum(arr, size));
+  printf("Avg: %.2f\n", array_avg(arr, size));
 
-    return 0;
+  return 0;
 }
 
 // Implement functions below
 int array_min(int arr[], int size) {
-    // TODO: return smallest element
-    int min = arr[0]; 
-    for(int i=0; i< size; i++)  {
-      if (arr[i]< min) {
-        min = arr[i];
-      }
+  // TODO: return smallest element
+  int min = arr[0];
+  for (int i = 0; i < size; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
     }
-    return 0; // placeholder
+  }
+  return min;  // placeholder
 }
 
 int array_max(int arr[], int size) {
-    // TODO: return largest element
-    int max = arr[0];
-    for (int j=0; j<size; j++){
-        if (arr[j]>max){
-            max = arr[j];
-        }
+  // TODO: return largest element
+  int max = arr[0];
+  for (int j = 0; j < size; j++) {
+    if (arr[j] > max) {
+      max = arr[j];
     }
-    return 0; // placeholder
+  }
+  return max;  // placeholder
 }
 
 int array_sum(int arr[], int size) {
-    // TODO: return sum of elements
-    int sum =0;
+  // TODO: return sum of elements
+  int sum = 0;
 
-    for(int k=0; k<size; k++){
-     sum+= arr[k];
-    }
-    return 0; // placeholder
+  for (int k = 0; k < size; k++) {
+    sum += arr[k];
+  }
+  return sum;  // placeholder
 }
 
 float array_avg(int arr[], int size) {
-    // TODO: return average as float (avoid integer division)
-    for (int l=0; l<size; l++)
-    
-    return 0.0f; // placeholder
+  // TODO: return average as float (avoid integer division)
+  float sum2 = 0;
+
+  for (int l = 0; l < size; l++) {
+    sum2 += arr[l];
+  }
+
+  float avg = sum2 / size;
+
+  return avg;  // placeholder
 }
